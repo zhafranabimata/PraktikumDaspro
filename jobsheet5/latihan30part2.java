@@ -27,8 +27,8 @@ public class latihan30part2 {
             }
         } else {
             System.out.println("Akses ditolak");
-        }
-
-        input.close();
-    }
-}
+        } 
+     
+        input.close(); 
+    } 
+}  
