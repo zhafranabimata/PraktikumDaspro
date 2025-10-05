@@ -1,4 +1,4 @@
-package jobsheet5;
+package PraktikumDaspro.jobsheet5;
 import java.util.Scanner;
  
 public class ifCetakKRS30 {
