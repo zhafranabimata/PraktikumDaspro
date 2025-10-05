@@ -1,7 +1,7 @@
 package jobsheet5;
 import java.util.Scanner;
  
-public class ifCetakK {
+public class ifCetakKRS30 {
 
     public static void main(String[] args) {
         boolean uktLunas;
