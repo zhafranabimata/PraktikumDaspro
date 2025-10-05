@@ -14,6 +14,6 @@ public class ifCetakKRS30 {
                 : "Registrasi ditolak. Silahkan lunasi UKT terlebih dahulu.";
         System.out.println(pesan);
 
-        sc.close();
+        sc.close(); 
     }
 }
