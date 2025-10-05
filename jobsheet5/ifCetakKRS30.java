@@ -1,24 +1,18 @@
 package PraktikumDaspro.jobsheet5;
 import java.util.Scanner;
- 
+
 public class ifCetakKRS30 {
-
     public static void main(String[] args) {
-        boolean uktLunas;
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("---CETAK KRS SIAKAD---");
-        System.out.println("APAKAH UKT LUNAS ? (true/false):");
-        uktLunas =sc.nextBoolean();
-        
-        if (uktLunas){
-            System.out.println("Pembayaran UKT terverifikasi");
-            System.out.println("Silahkan Cetak dan tanda tangan PA");
+        System.out.println("--- Cetak KRS SIAKAD ---");
+        System.out.print("Apakah UKT sudah lunas? (true/false): ");
+        boolean uktLunas = sc.nextBoolean();
 
-        }else{
-                System.out.println("Silahkan Melunasi UKT terlebih dahulu -w-");
-
-        }
+        String pesan = (uktLunas)
+                ? "Pembayaran UKT terverifikasi.\nSilahkan cetak KRS dan minta tanda tangan PA"
+                : "Registrasi ditolak. Silahkan lunasi UKT terlebih dahulu.";
+        System.out.println(pesan);
 
         sc.close();
     }
