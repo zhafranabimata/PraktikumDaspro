@@ -1,13 +1,13 @@
 package jobsheet6;
 import java.util.Scanner;
 
-public class Hehe {
+public class CaseMethodInputNilaiMahasiswa {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
     
-        double nilaiuts, nilaiuas, nilaitugas, nilai1, nilai2, nilaiuts1, nilaiuas2, nilaitugas3;
-        String nama, status1, status2, huruf1, huruf2, nim;
+        double nilaiuts, nilaiuas, nilaitugas, nilai1, nilai2, nilaiuts1, nilaiuas2, nilaitugas3, rataRata;
+        String nama, status1, status2, huruf1, huruf2, nim, statusSemester;
 
         System.out.println("INPUT DATA MAHASISWA");
         System.out.print("Nama Mahasiswa :");
@@ -34,9 +34,6 @@ public class Hehe {
 
         nilai1 = (nilaiuts * 0.3) + (nilaiuas * 0.4) + (nilaitugas * 0.3);
         nilai2 = (nilaiuts1 * 0.3) + (nilaiuas2 * 0.4) + (nilaitugas3 * 0.3);
-       
-        System.out.println(nilai1);
-        System.out.println(nilai2);
 
         if (nilai1 >= 80) huruf1 = "A";
         else if (nilai1 >= 73) huruf1 = "B+";
@@ -54,22 +51,6 @@ public class Hehe {
         else if (nilai2 >= 39) huruf2 = "D";
         else huruf2 = "E";
 
-        if (nilai2 >= 80) {
-            System.out.println("A");
-        } else if (nilai2 >= 73 && nilai2 < 80) {
-            System.out.println("B+");
-        } else if (nilai2 >= 65 && nilai2 < 73) {
-            System.out.println("B"); 
-        } else if (nilai2 >= 60 && nilai2 < 65) {
-            System.out.println("C+");
-        } else if (nilai2 >= 50 && nilai2 < 60) {
-            System.out.println("C");
-        } else if (nilai2 >= 39 && nilai2 < 50) {
-            System.out.println("D");
-        } else if (nilai2 <= 39) {
-            System.out.println("E");
-        }
-
         if (nilai1 >= 60) {
             status1 = "LULUS";
         } else {
@@ -81,13 +62,8 @@ public class Hehe {
         } else {
             status2 = "TIDAK LULUS";
         }
-
-        System.out.println("\nStatus MK1 : " + status1);
-        System.out.println("Status MK2 : " + status2);
-
-        // ===== NESTED IF UNTUK STATUS SEMESTER =====
-        double rataRata = (nilai1 + nilai2) / 2;
-        String statusSemester;
+        
+        rataRata = (nilai1 + nilai2) / 2;
 
         if (status1.equals("LULUS") && status2.equals("LULUS")) {
             if (rataRata >= 70) {
