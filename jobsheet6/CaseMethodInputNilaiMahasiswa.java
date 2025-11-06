@@ -75,6 +75,7 @@ public class CaseMethodInputNilaiMahasiswa {
             statusSemester = "TIDAK LULUS";
         }
 
+        
         System.out.println("\n=============== HASIL PENILAIAN AKADEMIK ===============");
         System.out.println("Nama : " + nama);
         System.out.println("NIM  : " + nim);
@@ -88,7 +89,7 @@ public class CaseMethodInputNilaiMahasiswa {
 
         System.out.println("--------------------------------------------------------------------------");
         System.out.println("Rata-rata Nilai Akhir : " + rataRata);
-        System.out.println("Status Semester       : " + statusSemester);
+        System.out.println("Status Semester       : " + statusSemester);    
         
         sc.close();
 
