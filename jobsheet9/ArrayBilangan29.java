@@ -8,7 +8,7 @@ public class ArrayBilangan29 {
         bil[2] = -7;
         bil[3] = 17;
 
-        for (int i; i < 4; i++){
+        for (int i = 0; i < 4; i++){
             System.out.println(bil[i]);
         }
 
